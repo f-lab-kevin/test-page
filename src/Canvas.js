@@ -60,7 +60,7 @@ const Canvas = () => {
         const img = new Image();
         img.src = currentFrame(index);
         img.onload= function() {
-          context.fillRect(0, 0, 720, 405);
+          context.clearRect(0, 0, 720, 405);
           context.drawImage(img, 0, 0);
         }
       }

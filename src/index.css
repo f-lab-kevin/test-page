@@ -3,11 +3,19 @@ html {
 }
 
 body {
-  background: #000;
   height: 500vh;
 }
 
-canvas {
+/* canvas {
+} */
+
+/* #tsparticles {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+} */
+
+#hero-lightpass {
   position: fixed;
   left: 50%;
   top: 50%;

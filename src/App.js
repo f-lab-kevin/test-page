@@ -1,10 +1,12 @@
 import Canvas from './Canvas';
+import Stars from './Particles';
 
 function App() {
   return (
-    <div className="App">
-      <Canvas />
-    </div>
+      <div>
+        <Stars />
+        <Canvas />
+      </div>
   );
 }
 

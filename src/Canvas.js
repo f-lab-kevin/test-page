@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import styled from '@emotion/styled';
 
 const currentFrame = index => (
-  `http://localhost:3000/bg/${index.toString()}.png`
+  `/test-page/bg/${index.toString()}.png`
 )
 
 const frameCount = 61;

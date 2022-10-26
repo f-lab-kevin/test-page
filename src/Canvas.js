@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import styled from '@emotion/styled';
 
 const currentFrame = index => (
   `http://localhost:3000/bg/${index.toString()}.png`
@@ -70,8 +71,14 @@ const Canvas = () => {
   },[frame])
 
   return(
-    <canvas ref={canvasRef} id={'hero-lightpass'} width='720' height={'405'} />
+    <CanvasContainer>
+      <canvas ref={canvasRef} id={'hero-lightpass'} width='720' height={'405'} />
+    </CanvasContainer>
   )
 }
+
+const CanvasContainer = styled.div`
+  height: 2000px;
+`;
 
 export default Canvas;
